@@ -1,0 +1,33 @@
+using System;
+
+class Retangulo
+{
+    // Atributos
+    public double LadoA { get; private set; }
+    public double LadoB { get; private set; }
+
+    // Construtor
+    public Retangulo(double ladoA, double ladoB)
+    {
+        LadoA = ladoA;
+        LadoB = ladoB;
+    }
+
+    // Métodos
+    public void MudarLados(double ladoA, double ladoB)
+    {
+        LadoA = ladoA;
+        LadoB = ladoB;
+    }
+
+    public double CalcularArea()
+    {
+        return LadoA * LadoB;
+    }
+
+    public double CalcularPerimetro()
+    {
+        return 2 * (LadoA + LadoB);
+    }
+}
+
